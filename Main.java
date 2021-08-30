@@ -102,6 +102,22 @@ class Empleado
 {
     private String nombre;
     private String clave;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getClave() {
+        return clave;
+    }
+
+    public void setClave(String clave) {
+        this.clave = clave;
+    }
 }
 
 class Prestamo
@@ -147,17 +163,27 @@ class Prestamo
 
 class AdministradorDeUsuarios
 {
-
+    public Usuario dameUsuarioPorClave(String clave){
+        Usuario usuario = new Usuario();
+        return usuario;
+    }
 }
 
 class AdministradorDeLibros
 {
-
+    public Libro dameLibroPorClave(String clave)
+    {
+        Libro libro = new Libro();
+        return libro;
+    }
 }
 
 class AdministradorDePrestamos
 {
+    public void registraPrestamo(Empleado empleado, Usuario usuario, Libro[] libro)
+    {
 
+    }
 }
 public class Main {
 
